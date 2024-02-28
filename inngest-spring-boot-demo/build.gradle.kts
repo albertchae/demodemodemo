@@ -87,3 +87,7 @@ tasks.withType<Test> {
 tasks.register<Test>("integrationTest") {
     systemProperty("test-group", "integration-test")
 }
+
+tasks.create("stage") {
+    dependsOn("installDist")
+}
