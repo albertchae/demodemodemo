@@ -89,5 +89,5 @@ tasks.register<Test>("integrationTest") {
 }
 
 tasks.create("stage") {
-    dependsOn("installDist")
+    dependsOn("build")
 }
